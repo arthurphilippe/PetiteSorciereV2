@@ -14,7 +14,16 @@ bot.on('ready', () => {
 bot.login(token);
 
 bot.on("message", message => {
+    
+    //Help
     if (message.content === "help"){
         help(message);
+    }
+
+
+    //automatisation acekid
+    if(message.guild.id === "416194652744450048" || message.guild.id === "454702934463217674"){
+        if (message.mentions.users.first()){
+            
     }
 });
