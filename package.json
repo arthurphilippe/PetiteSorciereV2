@@ -1,0 +1,32 @@
+{
+  "name": "petitesorcierev2",
+  "version": "1.0.0",
+  "description": "c'est très le bot",
+  "main": "Index.js",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "fs": "^0.0.1-security",
+    "googleapis": "^27.0.0",
+    "i": "^0.3.6",
+    "lowdb": "^1.0.0",
+    "node-schedule": "^1.3.2"
+  },
+  "engines": {
+    "node": "10.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node Index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Kiruan-/petitesorcierev2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Kiruan-/petitesorcierev2/issues"
+  },
+  "homepage": "https://gitlab.com/Kiruan-/petitesorcierev2#readme"
+}
