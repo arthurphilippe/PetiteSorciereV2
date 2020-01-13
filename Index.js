@@ -2,8 +2,7 @@
 const Discord = require('discord.js');
 const fs = require('fs');
 var schedule = require('node-schedule');
-//const token = fs.readFileSync("Token_PetiteSorciere.txt", "UTF-8");
-const token = "NDg5NzU2MTA3ODc1NjgwMjU2.XaMRJQ.5FenXypp7n-i6j-nmyLfPoomFZs";
+const token = fs.readFileSync("Token_PetiteSorciere.txt", "UTF-8");
 
 //commandes
 const tag = require("./commandes/acekid/tag.js");
