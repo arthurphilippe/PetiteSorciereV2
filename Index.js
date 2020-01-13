@@ -186,6 +186,8 @@ bot.on("message", message => {
     if(message.content ===       (prefix + "jul"           )){image(message, prefix);}
     if(message.content.startsWith(prefix + "tartine"       )){image(message, prefix);}
     if(message.content.startsWith(prefix + "courgette"     )){image(message, prefix);}
+    if(message.content.startsWith(prefix + "riho"          )){image(message, prefix);}
+
 
     if(message.content.startsWith(prefix + "ac"            )){ac(message, prefix);}
     if(message.content.startsWith(prefix + "poll"          )){poll(bot, message, prefix);}

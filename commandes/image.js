@@ -123,6 +123,11 @@ module.exports = (message, prefix) => {
     if(message.content.startsWith(prefix + "courgette")){
         message.channel.send({ files: ["./media/courgette.gif"]});
     }
+    if(message.content.startsWith(prefix + "riho")){
+        number = 132;
+        imageNumber = Math.floor(Math.random() * (number - 1 + 1)) + 1;
+        message.channel.send({ files: ["./media/riho/" + imageNumber + ".jpg"]});
+    }
 
     console.log(message.content + " " + message.member.user.tag + " " + message.channel.name);
 }
