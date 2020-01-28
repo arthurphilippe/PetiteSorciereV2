@@ -6,6 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 Token_PetiteSorciere.txt*
 config.js*
+acbot.js*
 
 # Runtime data
 pids
