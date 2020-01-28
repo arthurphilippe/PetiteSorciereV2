@@ -1,7 +1,6 @@
 module.exports = (message, prefix) => {
     var date = new Date();
     var today = date.getTime();
-    console.log(today);
     var timeAc = 1584662460000;
     var inbetweenSecondes = timeAc - today;
     var inbetweenDays = inbetweenSecondes / 86400000;

@@ -3,6 +3,7 @@ const Discord = require('discord.js');
 const fs = require('fs');
 var schedule = require('node-schedule');
 const token = fs.readFileSync("Token_PetiteSorciere.txt", "UTF-8");
+const config = require("./config.js");
 
 //commandes
 const tag = require("./commandes/acekid/tag.js");
@@ -14,6 +15,8 @@ const poll = require("./commandes/poll.js");
 const merch = require("./commandes/acekid/merch.js");
 const ping = require("./commandes/ping");
 const ac = require("./commandes/ac.js");
+const acbot = require("./commandes/acekid/acbot.js");
+
 
 const help = require("./commandes/help/help.js");
 const cmdPhoto = require("./commandes/help/cmdPhoto.js");
@@ -205,8 +208,9 @@ bot.on("message", message => {
         //commandes
         if(message.content.startsWith(prefix + "calin"         )){calin(message)};
         if(message.content.startsWith(prefix + "gashina"       )){image(message)};
-        if(message.content.startsWith(prefix + "yes"           )){image(message, prefix);}
+        if(message.content.startsWith(prefix + "yes"           )){image(message, prefix)};
         if(message.content.startsWith(prefix + "merch"         )){merch(message)};
+        if(message.content.startsWith(prefix + "acbot"         )){acbot(message, prefix)};
     }
     
     //moody
