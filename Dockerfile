@@ -15,5 +15,8 @@ RUN npm install
 # Bundle app source
 COPY . .
 
+VOLUME [ "/usr/src/app/media" ]
+
 EXPOSE 8080
+
 CMD [ "node", "Index.js" ]

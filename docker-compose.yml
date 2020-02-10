@@ -1,0 +1,9 @@
+version: "3"
+services:
+  webapp:
+    build:
+      context: .
+    volumes:
+      - ./media:/usr/src/app/media:ro
+      - ./Index.js:/usr/src/app/Index.js:ro
+      - ./commandes:/usr/src/app/commandes:ro
