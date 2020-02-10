@@ -16,6 +16,7 @@ const merch = require("./commandes/acekid/merch.js");
 const ping = require("./commandes/ping");
 const ac = require("./commandes/ac.js");
 const acbot = require("./commandes/acekid/acbot.js");
+const ths = require("./commandes/amesa/ths.js")
 
 
 const help = require("./commandes/help/help.js");
@@ -225,7 +226,7 @@ bot.on("message", message => {
     
     //uniquement Kiruan - perso
     if(message.guild.id === "454702934463217674"){
-        
+        if(message.content.startsWith(prefix + "ths"           )){ths(message, prefix, bot);}
     }
 });
 
